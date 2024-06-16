@@ -3,7 +3,7 @@
     "builds": [
 
         {
-            "src": "./bin/server.ts",
+            "src": "./dist/server.ts",
             "use": "@now/node"
 
         }
@@ -11,7 +11,7 @@
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "/bin/server.ts"
+            "dest": "/dist/server.ts"
         }
     ]
 }
