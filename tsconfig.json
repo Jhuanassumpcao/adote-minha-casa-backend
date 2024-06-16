@@ -1,17 +1,10 @@
 {
+  "extends": "@adonisjs/tsconfig/tsconfig.app.json",
   "compilerOptions": {
     "target": "ES2020",
-    "module": "ES2020", // or another allowed value like 'esnext', 'node16', etc.
+    "module": "ES2020",
     "moduleResolution": "node",
-    "baseUrl": ".",
-    "paths": {
-      "#start/*": ["start/*"] // Ensure this maps correctly to your module paths
-    },
-    "esModuleInterop": true,
-    "forceConsistentCasingInFileNames": true,
-    "strict": true,
-    "skipLibCheck": true
+    "rootDir": "./",
+    "outDir": "./build",
   },
-  "include": ["**/*.ts"],
-  "exclude": ["node_modules"]
 }
