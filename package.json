@@ -5,10 +5,10 @@
   "type": "module",
   "license": "UNLICENSED",
   "scripts": {
-    "start": "npm ci --omit='dev' && node ./start/server.js",
+    "start": "node bin/server.js",
     "build": "node ace build",
     "dev": "node ace serve --hmr",
-    "vercel-build": " node ace migration:run --force && npm ci --omit='dev' && node ./build/bin/server.js",
+    "vercel-build": "node ace migration:run --force",
     "test": "node ace test",
     "lint": "eslint .",
     "format": "prettier --write .",
@@ -32,18 +32,14 @@
     "#tests/*": "./tests/*.js",
     "#config/*": "./config/*.js"
   },
-  "engines": {
-    "node": ">=20.6.0",
-    "npm": ">=10.5.0"
-  },
   "devDependencies": {
     "@adonisjs/assembler": "^7.6.1",
     "@adonisjs/eslint-config": "^1.3.0",
     "@adonisjs/prettier-config": "^1.3.0",
     "@adonisjs/tsconfig": "^1.3.0",
-    "@japa/api-client": "^1.4.4",
-    "@japa/assert": "^1.2.4",
-    "@japa/plugin-adonisjs": "^1.0.5",
+    "@japa/api-client": "^2.0.3",
+    "@japa/assert": "^3.0.0",
+    "@japa/plugin-adonisjs": "^3.0.1",
     "@japa/runner": "^3.1.4",
     "@swc/core": "^1.5.7",
     "@types/luxon": "^3.4.2",
@@ -56,7 +52,7 @@
     "typescript": "^5.4.5"
   },
   "dependencies": {
-    "@adonisjs/auth": "^8.2.3",
+    "@adonisjs/auth": "^9.2.1",
     "@adonisjs/core": "^6.9.0",
     "@adonisjs/cors": "^2.2.1",
     "@adonisjs/lucid": "^20.6.0",
