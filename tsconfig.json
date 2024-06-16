@@ -1,8 +1,12 @@
 {
   "extends": "@adonisjs/tsconfig/tsconfig.app.json",
   "compilerOptions": {
-    "target": "ES2020",
-    "module": "ES2020",
+    "target": "ES6",
+    "module": "commonjs",
+    "baseUrl": "./",
+    "paths": {
+      "#start/*": ["src/start/*"]
+    },
     "moduleResolution": "node",
     "rootDir": "./",
     "outDir": "./build",
