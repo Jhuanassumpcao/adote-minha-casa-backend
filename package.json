@@ -5,7 +5,8 @@
   "type": "module",
   "license": "UNLICENSED",
   "scripts": {
-    "start": "node ./app/bin/server.js",
+    "start": "NODE_ENV=production node server.js",
+    "install": "npm install --omit=dev",
     "build": "node ace build",
     "dev": "node ace serve --hmr",
     "vercel-build": "node ace migration:run --force",
