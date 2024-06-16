@@ -8,7 +8,7 @@
     "start": "npm ci --omit='dev' && node ./start/routes.js",
     "build": "node ace build",
     "dev": "node ace serve --hmr",
-    "vercel-build": "node ace migration:run --force && npm ci --omit='dev' && node start/routes.js",
+    "vercel-build": "node ace migration:run --force && npm ci --omit='dev' && node ,/start/routes.js",
     "test": "node ace test",
     "lint": "eslint .",
     "format": "prettier --write .",
