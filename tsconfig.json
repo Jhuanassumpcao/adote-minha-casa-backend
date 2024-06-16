@@ -3,13 +3,9 @@
   "compilerOptions": {
     "rootDir": "./",
     "module": "NodeNext",
+    "target": "es6",
     "isolatedModules": true,
-    "declaration": false,
     "outDir": "./build",
-    "esModuleInterop": true,
-    "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
-    "skipLibCheck": true,
     "paths": {
       "#controllers/*": ["./app/controllers/*.js"],
       "#exceptions/*": ["./app/exceptions/*.js"],
