@@ -4,7 +4,7 @@
     "builds": [
 
         {
-            "src": "bin/server.js",
+            "src": "start/routes.js",
             "use": "@vercel/node"
 
         }
@@ -12,7 +12,7 @@
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "bin/server.js"
+            "dest": "start/routes.js"
         }
     ]
 }
