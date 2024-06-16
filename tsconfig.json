@@ -3,12 +3,6 @@
   "compilerOptions": {
     "target": "ES2020",
     "module": "ES2020",
-    "baseUrl": "./",
-    "paths": {
-      "#start/*": ["./start/*"]
-    },
-
-    "moduleResolution": "node",
     "rootDir": "./",
     "outDir": "./build",
   },
