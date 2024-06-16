@@ -1,7 +1,17 @@
 {
-  "extends": "@adonisjs/tsconfig/tsconfig.app.json",
   "compilerOptions": {
-    "rootDir": "./",
-    "outDir": "./build",
+    "target": "ES2020",
+    "module": "ES2020", // ou outro valor permitido
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "#start/*": ["start/*"] // ajustado para refletir a estrutura do seu projeto
+    },
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true
   },
+  "include": ["**/*.ts"], // incluir todos os arquivos .ts no projeto
+  "exclude": ["node_modules"]
 }
