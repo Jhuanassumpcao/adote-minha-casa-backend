@@ -3,9 +3,5 @@
   "compilerOptions": {
     "rootDir": "./",
     "outDir": "./build",
-    "module": "es2020",  
-    "paths": {
-      "#start/*": ["./start/*"]  
-    }
-  }
+  },
 }
