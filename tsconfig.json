@@ -3,6 +3,7 @@
   "compilerOptions": {
     "rootDir": "./",
     "module": "NodeNext",
+    "target": "es6",
     "isolatedModules": true,
     "declaration": false,
     "outDir": "./build",
@@ -29,6 +30,6 @@
       "#config/*": ["./config/*.js"]
     }
   },
-  "include": ["**/*.ts"],
+  "include": ["./**/*.ts"],
   "exclude": ["node_modules"]
 }
