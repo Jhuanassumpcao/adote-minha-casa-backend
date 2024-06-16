@@ -6,7 +6,7 @@
   "license": "UNLICENSED",
   "scripts": {
     "start": "node bin/server.js",
-    "build": "node ace build",
+    "build": "node ace build npm ci --omit='dev'",
     "dev": "node ace serve --hmr",
     "vercel-build": "node ace migration:run --force",
     "test": "node ace test",
